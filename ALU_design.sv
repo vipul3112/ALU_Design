@@ -22,7 +22,7 @@ module ALU_Design #(parameter N=8, C=4)
     reg [C-1:0]     prev_CMD;
     reg [1:0]       count;
     reg [N-1:0]     tmp_a, tmp_b;       // multiplication sampling 
-    reg [2*N-1:0]   tmp_res;
+    //reg [2*N-1:0]   tmp_res;
 
     // Carry out for unsigned ADD and ADD with CIN
     assign COUT = ((CMD == 'd0 || CMD == 'd2) && MODE == 1'b1) ? RES[N] : 1'b0;
