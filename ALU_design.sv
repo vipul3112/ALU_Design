@@ -37,7 +37,7 @@ module ALU_Design #(parameter N=8, C=4)
     assign OFLOW = ((CMD == 'd1 || CMD == 'd3 || CMD == 'd11 || CMD == 'd12) && MODE == 1'b1) ? 
                    (~RES[N]) : 1'b0;
 
-    always @(posedge CLK) begin
+    always @(posedge CLK or posedge RST) begin
         if (RST) begin
             RES      <= {(2*N){1'b0}};
             ERR      <= 1'b0;
