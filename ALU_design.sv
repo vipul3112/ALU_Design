@@ -1,4 +1,4 @@
-LU_Design #(parameter N=8, C=4)
+module ALU_Design #(parameter N=8, C=4)
 (
     input  [N-1:0]      OPA,
     input  [N-1:0]      OPB,
