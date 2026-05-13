@@ -1,4 +1,4 @@
-DD        4'h0
+`define ADD        4'h0
 `define SUB        4'h1
 `define ADD_CIN    4'h2
 `define SUB_CIN    4'h3
